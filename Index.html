@@ -1,0 +1,325 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Museum of Science</title>
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!--LOAD JQUERY FOR CAROUSEL-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!--LOAD BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--LOAD BOOTSTRAP THEME-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!--LOAD BOOTSTRAP JAVASCRIPT-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <!--LOAD ANIMATE.CSS, COURTESY OF https://raw.githubusercontent.com/daneden/animate.css/master/animate.css BY DANIEL EDEN-->
+    <link href="Animate.css" rel="stylesheet" />
+
+    <!--LOAD RESET.CSS, COURTESY OF https://meyerweb.com/eric/tools/css/reset/ BY ERIC MEYER-->
+    <link href="reset.css" rel="stylesheet" />
+
+    <!--LOAD FONT AWESOME, COURTESY OF https://fontawesome.com/ -->
+    <script src="https://use.fontawesome.com/373d203a00.js"></script>
+
+    <!--CUSTOM JAVASCRIPT-->
+    <script src="Site.js"></script>
+
+    <!--CUSTOM CSS-->
+    <link href="Styles.css" rel="stylesheet" />
+</head>
+<body>
+    <!--BEGIN CAROUSEL-->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="Images/jersey-banner.jpg" style="width:100%" class="img-responsive" />
+                <div class="overlay-container">
+                    <div class="overlay">
+                        <h1 class="jumbo">Gridiron Glory – Now Open!</h1>
+                        <h3 class="jumbo-mumbo">Experience the most extensive football exhibit ever created.</h3>
+                        <button type="button" class="btn btn-primary custom-button">Learn More</button>
+                        <br />
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/bridge-banner.jpg" style="width:100%" class="img-responsive" />
+                <div class="overlay">
+                    <div>
+                        <h2 class="jumbo">Dream Big: Engineering Our World</h2>
+                        <h3 class="jumbo-mumbo">Celebrate the human ingenuity behind engineering marvels big and small, and learn how engineers push the limits of innovation!</h3>
+                        <button type="button" class="btn btn-primary custom-button">Learn More</button>
+                        <br />
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/duck-tours-banner.jpg" style="width:100%" class="img-responsive" />
+                <div class="overlay">
+                    <div>
+                        <h2 class="jumbo">Boston Duck Tours</h2>
+                        <h3 class="jumbo-mumbo">Did you know you can catch a Duck Tour right in front of our <i>T. rex</i> outside?</h3>
+                        <button type="button" class="btn btn-primary custom-button">Learn More</button>
+                        <br />
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/fenway-banner.jpeg" style="width:100%" class="img-responsive" />
+                <div class="overlay">
+                    <div>
+                        <h2 class="jumbo">Science Parks Teams up with Fenway Park</h2>
+                        <h3 class="jumbo-mumbo">The Boston Red Sox have teamed up with the Museum of Science in a first-of-its-kind, multi-year partnership.</h3>
+                        <button type="button" class="btn btn-primary custom-button">Learn More</button>
+                        <br />
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/dome-banner.jpg" style="width:100%" class="img-responsive" />
+                <div class="overlay">
+                    <div>
+                        <h2 class="jumbo">Music Under the Dome</h2>
+                        <h3 class="jumbo-mumbo">On Friday and Saturday evenings, experience one of our innovative and immersive music offerings in the Charles Hayden Planetarium.</h3>
+                        <button type="button" class="btn btn-primary custom-button">Learn More</button>
+                        <br />
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/butterfly-banner.jpg" style="width:100%" class="img-responsive" />
+                <div class="overlay">
+                    <div>
+                        <h2 class="jumbo">Butterfly Garden</h2>
+                        <p class="jumbo-mumbo">Walk among the free-flying residents of this warm conservatory filled with exotic plants.</p>
+                        <button type="button" class="btn btn-primary custom-button">Learn More</button>
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--CAROUSEL CONTROLS-->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <i class="ion-ios-arrow-left"></i>
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <!--END CAROUSEL CONTROLS-->
+    </div>
+    <!--END CAROUSEL-->
+
+    <!--BEGIN PHOTO GRID-->
+    <ul class="photo-grid">
+        <li>
+            <a href="#">
+                <figure>
+                    <img src="Images/pro-football-hall-of-fame.jpg" height="180" width="320" alt="Pro Football" />
+                    <figcaption>
+                        <p>Gridiron Glory <br /> <br />
+                            <span class="zoomed-description">TEMPORARY EXHIBIT <br /> <br />
+                            Experience the story of professional football - from its humble beginnings to the cultural phenomenon it is today!</span>
+                        </p>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <figure>
+                    <img src="Images/school-bus.jpg" height="180" width="320" alt="School Bus" />
+                    <figcaption>
+                        <p>Field Trips <br /> <br />
+                        <span class="zoomed-description">Plan an unforgettable trip for your class with our demonstrations, shows, films, and exhibits!</span>
+                        </p>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <figure>
+                    <img src="Images/polar-express.jpg" height="180" width="320" alt="Polar Express" />
+                    <figcaption>
+                        <p>The Polar Express 4-D Experience® <br /> <br />
+                            <span class="zoomed-description">4-D FILM <br /> <br />
+                            Go to an extraordinary 4-D adventure this holiday season on THE POLAR EXPRESS!</span>
+                        </p>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <figure>
+                    <img src="Images/celebrating-women-in-stem.jpeg" height="180" width="320" alt="Women & Girls in STEM" />
+                    <figcaption>
+                        <p>Women & Girls in STEM Month <br /> <br />
+                            <span class="zoomed-description">EVENT <br /> <br />
+                            This November, we are celebrating women and girls in STEM.</span>
+                        </p>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <figure>
+                    <img src="Images/stories-under-the-stars.jpg" height="180" width="320" alt="Stories Under the Stars" />
+                    <figcaption>
+                        <p>Stories Under the Stars <br /> <br />
+                            <span class="zoomed-description">EVENT <br /> <br />
+                            Come to the Charles Hayden Planetarium for an evening of live storytelling, radio, and music.</span>
+                        </p>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <figure>
+                    <img src="Images/host-your-event-at-the-museum.jpg" height="180" width="320" alt="Host Your Event" />
+                    <figcaption>
+                        <p>Host Your Event at the Museum <br /> <br />
+                            <span class="zoomed-description">Planning an event? With spectacular views of the city and superior in-house catering, the Museum of Science is the perfect setting.</span>
+                        </p>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <figure>
+                    <img src="Images/ways-to-save-tile.jpg" height="180" width="320" alt="Ways to Save" />
+                    <figcaption>
+                        <p>Ways to Save <br /> <br />
+                            <span class="zoomed-description">We have a variety of offers to make it easy for you to visit us!</span>
+                        </p>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <figure>
+                    <img src="Images/boston-city-pass.jpg" height="320" width="320" alt="Ways to Save" />
+                    <figcaption>
+                        <p>Save on Sightseeing! <br /> <br />
+                            <span class="zoomed-description">Visiting Boston? CityPASS offers a great way to save and see Boston's top attractions.</span>
+                        </p>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+    </ul>
+    <!--END PHOTO GRID-->
+
+    <!--BEGIN FOOTER-->
+    <div class="footer">
+        <!--COLUMN ONE-->
+        <div class="more-links">
+            <h2>MORE</h2>
+            <ul>
+                <li>
+                    <a href="#">Employment</a>
+                </li>
+                <li>
+                    <a href="#">Press Room</a>
+                </li>
+                <li>
+                    <a href="#">Podcasts</a>
+                </li>
+                <li>
+                    <a href="#">Code of Ethics</a>
+                </li>
+                <li>
+                    <a href="#">Terms of Use</a>
+                </li>
+                <li>
+                    <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#">Legal Policy</a>
+                </li>
+            </ul>
+            <ul class="social-media">
+                <li>
+                    <a href="#"><img src="Images/facebook-logo.png" /></a></li><li>
+                    <a href="#"><img src="Images/youtube-logo.png" /></a></li><li>
+                    <a href="#"><img src="Images/twitter-logo.png" /></a></li><li>
+                    <a href="#"><img src="Images/instagram-logo.png" /></a></li><li>
+                    <a href="#"><img src="Images/linkedin-logo.png" /></a></li><li>
+                    <a href="#"><img src="Images/snapchat-logo.png" /></a>
+                </li>
+            </ul>
+        </div>
+        <!--COLUMN TWO-->
+        <div class="premier-partners">
+            <h2>PREMIER PARTNERS</h2>
+            <ul>
+                <li>
+                    <a href="#"><img src="Images/mathworks.jpg" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="Images/microsoft.jpg" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="Images/raytheon.jpg" /></a>
+                </li>
+            </ul>
+        </div>
+        <!--COLUMN THREE-->
+        <div class="about">
+            <h2>OUR MISSION</h2>
+            <p>The Museum's mission is to play a leading role in transforming the nation's relationship with science and technology.</p>
+            <ul>
+                <li><a href="#"><img src="Images/charity-navigator.jpg" /></a></li>
+                <li id="mccSpace"><a href="#"><img src="Images/mcc.jpg" /></a></li>
+            </ul>
+        </div>
+        <!--COLUMN FOUR-->
+        <div class="contact">
+            <h2>MUSEUM OF SCIENCE, BOSTON</h2>
+            <div class="contact-info">
+                <address>
+                    1 Science Park<br />
+                    Boston, MA 02114
+                </address>
+                <a href="#" id="googleMap">Get Directions</a>
+            </div>
+            <div class="contact-info">
+                <p class="miniMe">617-723-2500</p>
+                <a class="miniMe" href="mailto:#">information@mos.org</a>
+                <br />
+                <a href="#">Contact Us</a>
+            </div>
+            <a id="signupColor" href="#"><i id="envelopeColor" class="fa fa-envelope-square fa-1x" aria-hidden="true"></i> Sign Up For E-mail</a>
+        </div>
+    </div>
+    <div class="oneShadeOfGrey">
+        <p>© 1996-2017 Museum of Science, Boston – <span id="allRights">All rights reserved.</span></p>
+    </div>
+
+
+</body>
+</html>
